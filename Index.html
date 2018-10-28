@@ -1,0 +1,74 @@
+<!doctype HTML>
+
+<html>
+
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="description" content="Roberta Cake and Bakery" />
+
+  <title>Roberta´s Cake</title>
+
+  <link rel="stylesheet" style type="text/css" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<main>
+
+<header>
+<img src="images/RobertasCakeLogo.png" alt="Roberta´s Cake">
+</header>
+<div class="navigation" id="myNavigation">
+  <a href="#">Home</a>
+  <a href="Products.html">Products</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="javascript:void(0)" class="navigationIcon" onclick="myFunction()">
+  <i class="fa fa-bars"></i></a>
+</div>
+
+<div id="mainViewer">
+  <div class="Slides" id="imgSlidesFirst">
+  <div class="scrollSection1">
+    <img src="images/ProductsImg/MainGallery/img1.jpg" class="imgSlides" alt="SlideShow">
+  </div>
+  </div>
+  <div class="Slides">
+  <div class="scrollSection2">
+    <img src="images/ProductsImg/MainGallery/img2.jpg" class="imgSlides" alt="SlideShow">
+  </div>
+  </div>
+  <div class="Slides">
+  <div class="scrollSection3">
+    <img src="images/ProductsImg/MainGallery/img3.jpg" class="imgSlides" alt="SlideShow">
+  </div>
+  </div>
+  <div class="Slides">
+  <div class="scrollSection4">
+    <img src="images/ProductsImg/MainGallery/img4.jpg" class="imgSlides" alt="SlideShow">
+  </div>
+  </div>
+</div>
+
+<div class="circlesNavigation">
+  <span class="dot" id="dot1" onclick="currentFoto(1)"></span>
+  <span class="dot" id="dot2" onclick="currentFoto(2)"></span>
+  <span class="dot" id="dot3" onclick="currentFoto(3)"></span>
+  <span class="dot" id="dot4" onclick="currentFoto(4)"></span>
+</div>
+
+<footer>
+  IMPRESSUM
+</footer>
+
+</main>
+
+</body>
+</html>

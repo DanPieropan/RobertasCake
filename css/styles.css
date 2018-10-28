@@ -1,0 +1,440 @@
+body, html {
+  height: 100%;
+  background-image: url("RobertasCakeBg.jpg");
+}
+
+
+main {
+
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-image: linear-gradient(rgb(218,226,248,0.6),rgb(214,164,164,0.6));
+  border-radius: 5%;
+  border: 3px;
+  border-style: ridge;
+}
+
+header {
+
+   width: auto;
+   height: 100px;
+   border-bottom: 1px solid;
+   border-color: black;
+   padding: 1em 1em 1em 1em;
+   margin-bottom: 5px;
+
+}
+
+header img {
+  width: 65%;
+}
+
+/*Menu code*/
+
+.navigation {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid;
+  margin-bottom: 5px;
+}
+
+.navigation a {
+  color: black;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.navigation a:link {
+  text-decoration: none;
+}
+
+.navigation a:visited {
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.navigation .navigationIcon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navigation a:not(:first-child) {
+    display: none;
+  }
+
+  .navigation a.navigationIcon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation.responsive {
+    display: block;
+    position: relative;
+  }
+  .navigation.responsive a.navigationIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
+
+#mainViewer {
+
+  width: 100%;
+  height: 500px;
+}
+
+/*Slide code*/
+.Slides {
+  display: none;
+}
+
+#imgSlidesFirst {
+  display: block;
+}
+
+.imgSlides {
+
+  width: 100%;
+  height: 500px;
+}
+
+/*Navigation Bar of the SlideShow*/
+.circlesNavigation {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Products Page */
+.cakeHide {
+  width: 60%;
+  height: 500px;
+  border: 1px solid;
+  border-radius: 2%;
+  position: absolute;
+  margin-left: 4%;
+  z-index: 1;
+  background-image: linear-gradient(rgb(236,233,230),rgb(255,255,255));
+  text-align: center;
+  display: none;
+}
+
+.imgPresentation {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-left: 2%;
+  margin-top: 2%;
+
+}
+
+/*Gallery Products Pages*/
+.product {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.product img {
+  border: solid transparent 1px;
+}
+
+.product img:hover {
+   border: #333 solid 1px;
+   border-radius: 20%;
+   border-style: ridge;
+   background-color: white;
+}
+
+#container1 {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  z-index: 5;
+}
+
+#container2 {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
+}
+
+#box7{
+	position:absolute;
+
+/*Set-up dimension of the imgs*/
+}
+#box7 img {
+  width: 450px;
+  height: 300px;
+}
+#box7 span{
+	display:block;
+	float:left;
+}
+
+#thumbs7{
+	position:relative;
+	width:486px;
+	clear:both;
+	height:41px;
+	overflow:hidden;
+	margin-top:280px;
+}
+#thumbs7 .thumbs, #thumbs_handles7, #thumbs_mask7{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:41px;
+}
+#thumbs7 .thumbs div, #thumbs_handles7 span{
+	display:block;
+	width:60px;
+	height:41px;
+	margin:0;
+	float:left;
+	cursor:pointer;
+}
+#thumbs7 .thumbs div img{
+	width:54px;
+	float:right;
+}
+#thumbs_handles7 span{
+	background:url(thumb_invisible.gif) no-repeat;
+}
+#thumbs_mask7{
+	width:1200px;
+	background:url(thumbs_mask.gif) no-repeat center top;
+}
+
+.mask6{
+	position:absolute;
+  margin-top: -5%;
+  /*Set-up img dimension (to control also #box7.img)*/
+  width:450px;
+	height:300px;
+	overflow:hidden;
+}
+
+#cont {
+  width:550px;
+  margin:0 auto;
+  background:#fff;
+  text-align:left;
+  padding:20px;
+}
+
+.sample {
+  padding:20px 30px;
+  margin: 50px 0 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbs{
+	width:54px;
+}
+.thumbs div{
+	display:block;
+	width:54px;
+	height:41px;
+	margin:3px 0;
+	cursor:pointer;
+}
+
+.thumbs div img{
+	display:block;
+	width:100%;
+	height:100%;
+	border:none
+}
+
+#BackToProducts {
+  float: right;
+  margin-top: 0;
+  border-radius: 10px 10px 10px 10px;
+  margin-right: 1%;
+}
+
+#BackToProducts:hover {
+  background-color: #cbd0d8;
+}
+
+/*About Section*/
+#profile{
+  text-align: center;
+}
+
+#fotosProfile {
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  margin: 3% auto;
+  background-image: url("myAvatar.png");
+}
+
+#profile p {
+  width: 40%;
+  height: auto;
+  margin: auto;
+}
+
+/*Contact Section*/
+#contactForm {
+ text-align: center;
+}
+
+#contactDivision {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+#contactDivision a {
+  text-decoration: none;
+  color: black;
+}
+
+#contactDivision a:hover {
+  text-decoration: underline;
+}
+
+.contactType img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#boxMail {
+  width: 140px;
+  height: 140px;
+  border: 1px solid;
+  border-radius: 50%;
+  position:relative;
+}
+
+#boxMail:hover {
+  width: 140px;
+  height: 140px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-image: linear-gradient(rgb(236,233,230),rgb(255,255,255));
+  position:relative;
+}
+
+#boxTelephone {
+  width: 140px;
+  height: 140px;
+  border: 1px solid;
+  border-radius: 50%;
+  position:relative;
+}
+
+#boxTelephone:hover {
+  width: 140px;
+  height: 140px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-image: linear-gradient(rgb(60,165,92),rgb(181,172,73));
+  position:relative;
+}
+
+#boxFacebook {
+  width: 140px;
+  height: 140px;
+  border: 1px solid;
+  border-radius: 50%;
+  position:relative;
+}
+
+#boxFacebook:hover {
+  width: 140px;
+  height: 140px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-image: linear-gradient(rgb(8,80,120),rgb(133,216,206));
+  position:relative;
+}
+
+#boxInstagram {
+    width: 140px;
+    height: 140px;
+    border: 1px solid;
+    border-radius: 50%;
+    position:relative;
+  }
+
+#boxInstagram:hover {
+    width: 140px;
+    height: 140px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(255,128,8),rgb(255,200,55));
+    position:relative;
+  }
+
+/* Footer of the Site */
+footer {
+
+  width: auto;
+  height: 45px;
+  border-top: 1px solid;
+  border-color: black;
+  padding: 1em 1em 1em 1em;
+  margin-top: 5px;
+}
